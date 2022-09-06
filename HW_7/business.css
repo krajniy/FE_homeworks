@@ -19,11 +19,11 @@ h3{
 
 }
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    grid-gap: 38px;
+    justify-content: flex-start;
+    grid-gap: 40px;
     
 }
 .container_border-item{
@@ -32,8 +32,8 @@ h3{
 }
 .container-item{
     background-color: white;
-    max-width: 375px;
-    padding: 30px;
+    max-width: 450px;
+    padding: 10px 20px 40px 20px;
 }
 
 .icon > img{
