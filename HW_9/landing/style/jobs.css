@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.nav_top {
+    position: fixed;
+    background-color: #1d3557;
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+}
+
+.nav_top-list-item {
+    display: inline-block;
+    position: relative;
+    width: 5em;
+    height: 5em;
+
+}
+
+.nav_top-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav_top-list-item-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f3e9dc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    box-sizing: content-box;
+
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    background-image: url("../img/restaurant-2623071.jpg");
+    height: 60em;
+    background-size: cover;
+    background-position: center;
+}
+
+.open_time {
+    position: absolute;
+    bottom: 0;
+    padding: 1em 2em;
+    background-color: hsl(34, 49%, 91%, 0.6);
+    border: solid 2px #5e3023;
+    border-radius: 5px;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    width: 80em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fca311;
+    padding: 30px;
+
+}
+
+section>img {
+    width: 60%;
+    height: 100%;
+}
+
+.jobs_heading_main>h1 {
+    font-size: 3rem;
+    color: #1d3557;
+}
+
+footer {
+    background-color: #1d3557;
+    color: #f3e9dc;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+
+}
+
+.nav_bottom_list {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.nav_bottom_list a {
+    text-decoration: none;
+    color: #f3e9dc;
+}
+
+.nav_bottom_list>li {
+
+    margin: 5px;
+}
+
+form {
+    border: solid 1px #1d3557;
+    padding: 20px;
+}
+
+#message {
+    width: 350px;
+    height: 50px;
+}
+
+.jobs_list {
+    list-style-type: none;
+}
+
+.jobs_list-item {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.jobs_list-item:hover{
+    transform: scale(1.01)
+}
+
+.subhead_list_info {
+    color: #219ebc;
+    font-size: 0.9rem;
+}
+
+.jobs_list-item-info {
+    text-align: right;
+}
+
+.content_list_info_job {
+    text-align: center;
+    width: 200px;
+
+}
+
+.jobs_list-item-info>button {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #219ebc;
+    color: #e5e5e5;
+    cursor: pointer;
+
+}
+.jobs_list-item-info>button:hover{
+    background-color: #1d3557;
+
+}
+.jobs_list-item-info a{
+    text-decoration: none;
+    color: #e5e5e5;
+
+}
+
+.flex_button, .flex_job{
+    align-self: center;
+
+}

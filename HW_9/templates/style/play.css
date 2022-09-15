@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    margin: 0;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    height: 100vh;
+}
+.left_column{
+    background-color: #fc562c;
+    
+}
+.left_column_content{
+    padding: 60% 0 20% 15%;
+}
+.left_column_content > h4, .mid_column_content > h4{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    
+    margin: 0;
+}
+.left_column_content > h2{
+
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.mid_column_content{
+    padding: 10% 15% 0 15%;
+}
+.mid_column_content > h4{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+.mid_column_content > p{
+    padding-bottom: 10%;
+    
+}
+
+.mid_column-up{
+    background-color: white;
+}
+.mid_column-up > p{
+    color: #202228;
+    font-size: 55px;
+    padding: 15% 10% 15% 10%;
+    line-height: 110%;
+}
+.mid_column-up, 
+.mid_column-bottom{
+    min-width: 30vw;
+    min-height: 50vh;
+}
+.mid_column-bottom{
+    background-color: #202228;
+    color: white;
+}
+
+.right_column{
+    min-width: 30vw;
+    min-height: 100vh;
+    background-image: url('../img/shooting-basket.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.socials{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.socials-item{
+    fill: white;
+}

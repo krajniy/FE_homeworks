@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Oswald&display=swap');
+
+body {
+    margin: 0;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3);
+    height: 100vh;
+    grid-template-areas:
+        "A B B"
+        "C D E"
+        "F F G";
+}
+
+.grid_cell {
+    min-height: 33vh;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cell-short {
+
+    min-width: 33vw;
+}
+.cell-long {
+    min-width: 66vw;
+}
+
+.cell-1 {
+    grid-area: A;
+    background-image: url('../img/cell1.jpg');
+
+}
+
+.cell-2 {
+    grid-area: B;
+    background-image: url('../img/cell2.jpg');
+    display: flex;
+}
+
+.cell-3 {
+    grid-area: C;
+}
+
+.cell-4 {
+    grid-area: D;
+    background-image: url('../img/cell4.jpg');
+}
+
+.cell-5 {
+    grid-area: E;
+    background-image: url('../img/cell5.jpg');
+}
+
+.cell-6 {
+    grid-area: F;
+    background-image: url('../img/cell6.jpg');
+}
+
+.cell-7 {
+    grid-area: G;
+}
+.cell_content{
+    margin: 7%;
+    text-align: center;
+    color: #363739;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.cell_content > h4{
+    margin: 3%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+
+}
+.cell_content > img{
+    height: 32px;
+    width: 32px;
+}
+.cell_content-head{
+    align-self: flex-end;
+    justify-self: start;
+    padding-left: 7%;
+}
+.cell_content-head > h2{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 1px;
+}
