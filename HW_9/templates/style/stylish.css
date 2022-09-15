@@ -7,7 +7,7 @@ body{
 .grid_container{
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
     justify-content: space-around;
 
 
@@ -43,15 +43,24 @@ body{
     color: white;
     text-transform: uppercase;
     font-weight: 600;
+    position: relative;
     
 }
-.left_container-item-bottom a{
+.left_container-item-bottom-content{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    right: 15%;
+
+}
+
+.left_container-item-bottom-content a{
     color: white;
 }
-.left_container-item-bottom p {
+.left_container-item-bottom-content p {
     letter-spacing: 2px;    
     margin: 0;
-    padding: 12% 12% 0% 12%;
+    
     letter-spacing: 2px;
     font-size: 1.1rem;
     line-height: 160%;
@@ -74,27 +83,31 @@ body{
 
     background-color: black;
     color: white;
+    position: relative;
 }
-.right_container-item-up h4{
-    margin: 0;
-    /* padding: 80px 40px 10px 80px; */
-    padding: 10% 5% 0 10%;
+.right_container-item-up-content{
+    position: relative;
+    max-width: 25vw;
+    top: 25%;
+    left: 15%;
 
+}
+.right_container-item-up-content h4{
+    margin: 0;
     font-size: 1.6rem;
     letter-spacing: 4px;
     font-weight: 100;
 }
-.right_container-item-up h3{
+.right_container-item-up-content h3{
     margin: 0;
-    /* padding: 20px 40px 40px 80px; */
-    padding: 5% 5% 2% 10%;
+    padding-top: 5%; 
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     font-weight: 200;
     line-height: 110%;
 }
-.right_container-item-up >.svg_icon {
-    padding: 5% 5% 2% 10%;
+.right_container-item-up-content >.svg_icon {
+    padding-top: 5%; 
 
 }
 .right_container-item-bottom{
@@ -106,7 +119,7 @@ body{
     width: 35%;
     display: flex;
     justify-content: space-between;
-    padding: 5% 5% 2% 10%;
+    padding-top: 5%;
 
 }
 .socials-item{

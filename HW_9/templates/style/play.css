@@ -9,15 +9,19 @@ p{
 }
 .grid_container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     height: 100vh;
 }
 .left_column{
     background-color: #fc562c;
+    position: relative;
     
 }
 .left_column_content{
-    padding: 60% 0 20% 15%;
+    /* padding: 60% 0 20% 15%; */
+    position: absolute;
+    top: 40%;
+    left: 15%;
 }
 .left_column_content > h4, .mid_column_content > h4{
     font-size: 1.1rem;
@@ -50,11 +54,12 @@ p{
 
 .mid_column-up{
     background-color: white;
+    
 }
 .mid_column-up > p{
     color: #202228;
     font-size: 55px;
-    padding: 15% 10% 15% 10%;
+    padding: 20% 15% 15% 10%;
     line-height: 110%;
 }
 .mid_column-up, 
