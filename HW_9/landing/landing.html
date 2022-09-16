@@ -6,16 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/327072caa2.js" crossorigin="anonymous"></script>
     <title>Café</title>
 </head>
 
 <body>
-    <nav class="nav_top">
+    <nav class="nav_top" id="navtop">
         <div class="nav_top-list-item"><a href="#" class="nav_top-list-item-link">HOME</a></div>
         <div class="nav_top-list-item"><a href="#about" class="nav_top-list-item-link">ABOUT</a></div>
         <div class="nav_top-list-item"><a href="#menu" class="nav_top-list-item-link">MENU</a></div>
         <div class="nav_top-list-item"><a href="#findus" class="nav_top-list-item-link">FIND&nbsp;US</a></div>
         <div class="nav_top-list-item"><a href="../pages/jobs.html" class="nav_top-list-item-link">JOBS</a></div>
+        <div class="dark_switch_container">
+            <input type="checkbox" name="" id="check" class="checkbox"/>
+            <label for="check" class="label">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <div class="ball"></div>
+                
+            </label>
+        </div>
     </nav>
     <header>
         <div class="open_time">
@@ -239,7 +249,7 @@
 
 
     </main>
-    <footer>
+    <footer id="ftr">
         <nav class="nav_bottom">
             <ul class="nav_bottom_list">
                 <li><a href="#">Home</a> </li>
@@ -257,6 +267,18 @@
 
         </div>
     </footer>
+    <script>
+        const checkbox = document.getElementById('check');
+        const nvtp = document.getElementById('navtop');
+        const ftr = document.getElementById('ftr');
+        //console.log(checkbox);
+        checkbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark')
+            nvtp.classList.toggle('dark')
+            ftr.classList.toggle('dark');
+            
+        });
+    </script>
 </body>
 
 </html>

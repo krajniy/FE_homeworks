@@ -245,3 +245,64 @@ textarea::placeholder {
     height: 65px;
     margin: -65px 0 0;
 }
+
+.dark_switch_container{
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    position: relative;
+    transform: scale(1.5);
+}
+.ball {
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    /* transform: translateX(0px); */
+    transition: transform 0.2s linear;
+}
+.fa-moon {
+    color: #f1c40f;
+
+}
+
+.fa-sun {
+    color: #f39c12;
+
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+    transition: transform 0.2s linear;
+}
+
+body.dark {
+    background-color: #321c1c;
+    color: #f3e9dc;
+    transition: transform 0.2s linear;
+}
+nav.dark {
+    background-color: #321c1c;
+    color: #f3e9dc;
+    transition: transform 0.2s linear;
+}
+footer.dark {
+    background-color: #321c1c;
+    color: #f3e9dc;
+    transition: transform 0.2s linear;
+}
